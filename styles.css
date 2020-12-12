@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(95,107,119);
+}
+
+#navbar > ul {
+    padding: 0;
+}
+
+#main-doc {
+    font-family: 'Slabo 27px', serif;
+    font-size: 16px;
+    line-height: 125%;
+    margin-left: 250px;
+    width: auto;
+    margin-right: 10%;
+}
+
+#lowerPx, .hoverMe {
+    display: none;
+}
+
+#navbar {
+    position: fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    border-right:2.5px solid rgba(0, 0, 0, 0.7) ;
+    width: 250px;
+    font-family: 'Slabo 27px', serif;
+    background-color:#f5f5f5;
+    overflow-y: auto;
+}
+
+.title { 
+    font-size: 1.8em;
+    margin: 5px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 550;
+    color:rgb(168, 179, 18);
+}
+
+.nav-link {
+    border-top:2px solid rgba(0, 0, 0, 0.7);
+    display:block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: rgb(58, 57, 73);
+    font-size: 1.2em;
+}
+
+header {
+    font-size: 35px;
+    font-weight: 580;
+    color: rgb(209,100,5)
+}
+
+.main-section {
+    padding: 5%;
+    background-color: #f5f5f5;
+    border-radius: 1.25rem;
+    box-shadow: -3px 3px 2px rgb(201,210,85);
+    width: 95%;
+    margin: 10px 5% 20px;
+    text-align: justify;
+    color: rgb(58, 57, 73)
+}
+
+.code-block { 
+    background-color: rgb(16, 19, 36);
+    width: 80%;
+    min-height: 1%;
+    color:yellow;
+    border-radius: 1.25rem;
+    padding:20px;
+    text-align: justify;
+}
+
+img {
+    width:80%;
+    height:auto;
+}
+
+.dropContent {
+    display:none;
+    padding:10px 0px 10px 0px;
+    z-index: 1;
+    background-color: #f9f9f9;
+    width:170px;
+    border-radius: 1rem;
+}
+    
+
+@media only screen and (max-width:768px) {
+    body {
+        margin: 0;
+    }
+
+    header {
+        font-size: 22px;
+    }
+
+    #lowerPx {
+        display: inline;
+        text-align: center;
+        font-weight: 550;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+        font-family: 'Slabo 27px', serif;
+        color:white; 
+        font-size: 5.5vw;
+        background-color: rgb(201,210,85);
+        width: 100%;
+        position: fixed;
+        top : 0;
+        padding:10px;
+    }
+    
+    .icon {
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        margin:5px;}
+    
+    .menu {
+        top:2vw;
+        right:5px;
+        cursor:pointer;
+        position:fixed;
+    }
+
+    .hoverMe {
+        display: inline;
+    }
+    
+    .hoverMe:hover .dropContent {
+        display: block;
+        position:fixed;
+        top:35px;
+        right:5px;
+    }
+    
+    .link {
+        text-decoration: none;
+        display:block;
+        padding:5px;
+        color:rgb(58, 57, 73);
+        font-family: 'Slabo 27px', sans-serif;
+    }
+
+    .link:hover {
+        background-color: #f1f1f1;
+    }
+
+    #navbar {
+        display:none;
+    }
+
+    #main-doc {
+        display: block;
+        margin: 15vw 5% 5%;
+    }
+
+    .main-section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+}
